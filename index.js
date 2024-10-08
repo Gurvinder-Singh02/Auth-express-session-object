@@ -12,7 +12,7 @@ app.use(session({
     secret: 'topsecretuseenvforit', // Secret key for signing session ID cookie.
     resave: false,                   // Do not save session if unmodified.
     saveUninitialized: true,         // Save new sessions even if empty.
-    // cookie: { secure: true }         // Cookie sent only over HTTPS. disable it to use postman 
+    cookie: { secure: true }         // Cookie sent only over HTTPS. disable it to use postman 
 }));
 
 // when this route called session middleware create session 
